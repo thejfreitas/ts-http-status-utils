@@ -1,0 +1,32 @@
+{
+  "name": "ts-http-status-utils",
+  "version": "0.0.1",
+  "description": "HTTP status code declarations, descriptions and utils",
+  "main": "src/index.ts",
+  "homepage": "https://github.com/thejfreitas/ts-http-status-utils",
+  "bugs": "https://github.com/thejfreitas/ts-http-status-utils/issues",
+  "repository": "git@github.com:thejfreitas/ts-http-status-utils.git",
+  "author": "J. de Freitas",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "http",
+    "status",
+    "http-status",
+    "http-status-code",
+    "http-utils",
+    "http-error",
+    "http-error-message"
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "ts-loader": "^9.2.6",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}
