@@ -1,0 +1,38 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# dotenv environment variables file
+.env
+.env.test
+.env*.local
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+.vscode
+
+# Temporary folders
+tmp/
+temp/
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+### OSX ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
