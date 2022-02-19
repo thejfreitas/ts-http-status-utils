@@ -1,6 +1,6 @@
 {
   "name": "ts-http-status-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "HTTP status code declarations, descriptions and utils",
   "main": "src/index.ts",
   "homepage": "https://github.com/thejfreitas/ts-http-status-utils",
@@ -23,10 +23,8 @@
     "jest": "^27.5.1",
     "ts-jest": "^27.1.3",
     "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2"
-  },
-  "dependencies": {
-    "typescript": "^4.5.5"
   }
 }
