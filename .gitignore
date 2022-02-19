@@ -36,3 +36,5 @@ ehthumbs_vista.db
 .AppleDouble
 .LSOverride
 
+# build
+dist

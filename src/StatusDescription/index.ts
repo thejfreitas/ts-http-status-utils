@@ -1,3 +1,9 @@
+/**
+ * Status Description
+ *
+ * @export
+ * @enum {number}
+ */
 export enum StatusDescription {
   /**
    * @description - StatusCode 100

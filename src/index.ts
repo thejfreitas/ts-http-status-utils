@@ -5,5 +5,3 @@ export * from "./StatusLabel";
 export * from "./StatusPhrase";
 export * from "./RequestMethod";
 export * from "./Interfaces/";
-
-export as namespace TsHttpStatusUtils;

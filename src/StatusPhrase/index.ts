@@ -1,3 +1,9 @@
+/**
+ * Status Phrase
+ *
+ * @export
+ * @enum {number}
+ */
 export enum StatusPhrase {
   CONTINUE = "Continue",
   SWITCHING_PROTOCOLS = "Switching Protocols",

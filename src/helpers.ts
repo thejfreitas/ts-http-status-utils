@@ -4,20 +4,25 @@ import { StatusDescription } from "./StatusDescription";
 import { StatusLabel } from "./StatusLabel";
 import { IHttpResponsesDictionary } from "./Interfaces";
 
-export const makeHttpResponsesDictionary = (): IHttpResponsesDictionary => {
-  let dictionary = {};
+export const makeHttpResponsesDictionary = () => {
+  let dictionary: IHttpResponsesDictionary = {};
 
   for (const statusCode in StatusLabel) {
     if (Number.isNaN(Number(StatusLabel[statusCode]))) {
       continue;
     }
 
+    // @ts-ignore
+    const phrase = StatusPhrase[statusCode];
+    // @ts-ignore
+    const description = StatusDescription[statusCode];
+
     dictionary = {
       ...dictionary,
       [StatusCode[statusCode]]: {
         code: StatusCode[statusCode],
-        phrase: StatusPhrase[statusCode],
-        description: StatusDescription[statusCode],
+        phrase: phrase,
+        description: description,
       },
     };
   }

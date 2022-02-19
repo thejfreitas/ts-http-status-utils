@@ -1,3 +1,9 @@
+/**
+ * Status Label
+ *
+ * @export
+ * @enum {number}
+ */
 export enum StatusLabel {
   CONTINUE,
   SWITCHING_PROTOCOLS,
