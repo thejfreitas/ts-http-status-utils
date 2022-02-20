@@ -4,6 +4,9 @@
   "description": "HTTP status code declarations, descriptions and utils",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/thejfreitas/ts-http-status-utils",
   "bugs": "https://github.com/thejfreitas/ts-http-status-utils/issues",
   "repository": "git@github.com:thejfreitas/ts-http-status-utils.git",
@@ -20,7 +23,7 @@
     "http-error-message"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "test": "jest"
   },
   "devDependencies": {
