@@ -4,4 +4,4 @@ export * from "./StatusDescription";
 export * from "./StatusLabel";
 export * from "./StatusPhrase";
 export * from "./RequestMethod";
-export * from "./Interfaces/";
+export * from "./Interfaces";
