@@ -1,6 +1,7 @@
 import {
   makeHttpResponsesDictionary,
   getStatusPhraseByCode,
+  getStatusDescriptionByCode,
 } from "../src/helpers";
 import { HttpResponseObject } from "../src/Interfaces";
 import { StatusCode } from "../src/StatusCode";
@@ -85,6 +86,38 @@ describe("getStatusPhraseByCode tests", () => {
   it(`should get the proper status phrase from a server error response - ${StatusPhrase.BAD_GATEWAY}`, () => {
     expect(getStatusPhraseByCode(StatusCode.BAD_GATEWAY)).toEqual(
       StatusPhrase.BAD_GATEWAY
+    );
+  });
+});
+
+describe("getStatusDescriptionByCode tests", () => {
+  it(`should get proper description from an informational response - code: ${StatusCode.EARLY_HINTS}`, () => {
+    expect(getStatusDescriptionByCode(StatusCode.EARLY_HINTS)).toEqual(
+      StatusDescription.EARLY_HINTS
+    );
+  });
+
+  it(`should get proper description from a successful response - code: ${StatusCode.ACCEPTED}`, () => {
+    expect(getStatusDescriptionByCode(StatusCode.ACCEPTED)).toEqual(
+      StatusDescription.ACCEPTED
+    );
+  });
+
+  it(`should get proper description from a redirection message - code: ${StatusCode.SEE_OTHER}`, () => {
+    expect(getStatusDescriptionByCode(StatusCode.SEE_OTHER)).toEqual(
+      StatusDescription.SEE_OTHER
+    );
+  });
+
+  it(`should get proper description from a client error response - code: ${StatusCode.METHOD_NOT_ALLOWED}`, () => {
+    expect(getStatusDescriptionByCode(StatusCode.METHOD_NOT_ALLOWED)).toEqual(
+      StatusDescription.METHOD_NOT_ALLOWED
+    );
+  });
+
+  it(`should get proper description from a server error response - code: ${StatusCode.NOT_IMPLEMENTED}`, () => {
+    expect(getStatusDescriptionByCode(StatusCode.NOT_IMPLEMENTED)).toEqual(
+      StatusDescription.NOT_IMPLEMENTED
     );
   });
 });
