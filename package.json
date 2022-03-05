@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "test": "jest"
+    "test": "jest",
+    "watch": "tsc --watch"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",

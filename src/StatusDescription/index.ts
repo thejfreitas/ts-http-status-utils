@@ -22,31 +22,31 @@ export enum StatusDescription {
    */
   EARLY_HINTS = "This status code is primarily intended to be used with the Link header, letting the user agent start preloading resources while the server prepares a response.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 200
    */
   OK = "The request succeeded. The result meaning of `success` depends on the HTTP method.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 201
    */
   CREATED = "The request succeeded, and a new resource was created as a result. This is typically the response sent after POST requests, or some PUT requests.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 202
    */
   ACCEPTED = "The request has been received but not yet acted upon. It is noncommittal, since there is no way in HTTP to later send an asynchronous response indicating the outcome of the request. It is intended for cases where another process or server handles the request, or for batch processing.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 203
    */
   NON_AUTHORITATIVE_INFORMATION = "This response code means the returned metadata is not exactly the same as is available from the origin server, but is collected from a local or a third-party copy. This is mostly used for mirrors or backups of another resource. Except for that specific case, the 200 OK response is preferred to this status.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 204
    */
   NO_CONTENT = "There is no content to send for this request, but the headers may be useful. The user agent may update its cached headers for this resource with the new ones.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 205
    */
   RESET_CONTENT = "Tells the user agent to reset the document which sent this request.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 206
    */
   PARTIAL_CONTENT = "This response code is used when the Range header is sent from the client to request only part of a resource.",
   /**
