@@ -7,6 +7,7 @@
 export enum StatusPhrase {
   CONTINUE = "Continue",
   SWITCHING_PROTOCOLS = "Switching Protocols",
+  PROCESSING = "Processing",
   EARLY_HINTS = "Early Hints",
   OK = "OK",
   CREATED = "Created",

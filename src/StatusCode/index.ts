@@ -1,6 +1,17 @@
 /**
  * Http Status Codes
  *
+ * HTTP response status codes indicate whether a specific HTTP request has been successfully completed.
+ * Responses are grouped in five classes:
+ *
+ * Informational responses [100–199]
+ * Successful responses [200–299]
+ * Redirection messages [300–399]
+ * Client error responses [400–499]
+ * Server error responses [500–599]
+ *
+ * Source {@link https://developer.mozilla.org/en-US/docs/Web/HTTP/Status}
+ *
  * @export
  * @enum {number}
  */
@@ -11,15 +22,19 @@ export enum StatusCode {
    */
   CONTINUE = 100,
   /**
-   * @description - @
+   * @description This code is sent in response to an Upgrade request header from the client and indicates the protocol the server is switching to.
    */
   SWITCHING_PROTOCOLS = 101,
   /**
-   * @description - @
+   * @description This code indicates that the server has received and is processing the request, but no response is available yet.
+   */
+  PROCESSING = 102,
+  /**
+   * @description This status code is primarily intended to be used with the Link header, letting the user agent start preloading resources while the server prepares a response.
    */
   EARLY_HINTS = 103,
   /**
-   * @description - @
+   * @description -
    */
   OK = 200,
   /**

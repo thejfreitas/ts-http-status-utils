@@ -4,6 +4,6 @@ describe("makeHttpResponsesDictionary tests", () => {
   it("should create a dictionary with 54 objects", () => {
     const dictionary = makeHttpResponsesDictionary();
 
-    expect(Object.entries(dictionary)).toHaveLength(54);
+    expect(Object.entries(dictionary)).toHaveLength(55);
   });
 });

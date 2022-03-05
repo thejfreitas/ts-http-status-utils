@@ -7,6 +7,7 @@
 export enum StatusLabel {
   CONTINUE,
   SWITCHING_PROTOCOLS,
+  PROCESSING,
   EARLY_HINTS,
   OK,
   CREATED,
