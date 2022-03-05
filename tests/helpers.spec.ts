@@ -1,6 +1,8 @@
-import { makeHttpResponsesDictionary } from "../src/helpers";
+import {
+  makeHttpResponsesDictionary,
+  getStatusPhraseByCode,
+} from "../src/helpers";
 import { HttpResponseObject } from "../src/Interfaces";
-
 import { StatusCode } from "../src/StatusCode";
 import { StatusPhrase } from "../src/StatusPhrase";
 import { StatusDescription } from "../src/StatusDescription";
@@ -54,5 +56,35 @@ describe("makeHttpResponsesDictionary tests", () => {
       phrase: StatusPhrase.INTERNAL_SERVER_ERROR,
       description: StatusDescription.INTERNAL_SERVER_ERROR,
     });
+  });
+});
+
+describe("getStatusPhraseByCode tests", () => {
+  it(`should get the proper status phrase from an informational response - ${StatusPhrase.OK}`, () => {
+    expect(getStatusPhraseByCode(StatusCode.OK)).toEqual(StatusPhrase.OK);
+  });
+
+  it(`should get the proper status phrase from a successful response - ${StatusPhrase.PROCESSING}`, () => {
+    expect(getStatusPhraseByCode(StatusCode.PROCESSING)).toEqual(
+      StatusPhrase.PROCESSING
+    );
+  });
+
+  it(`should get the proper status phrase from a redirection message - ${StatusPhrase.NOT_MODIFIED}`, () => {
+    expect(getStatusPhraseByCode(StatusCode.NOT_MODIFIED)).toEqual(
+      StatusPhrase.NOT_MODIFIED
+    );
+  });
+
+  it(`should get the proper status phrase from a client error response - ${StatusPhrase.UNAUTHORIZED}`, () => {
+    expect(getStatusPhraseByCode(StatusCode.UNAUTHORIZED)).toEqual(
+      StatusPhrase.UNAUTHORIZED
+    );
+  });
+
+  it(`should get the proper status phrase from a server error response - ${StatusPhrase.BAD_GATEWAY}`, () => {
+    expect(getStatusPhraseByCode(StatusCode.BAD_GATEWAY)).toEqual(
+      StatusPhrase.BAD_GATEWAY
+    );
   });
 });
