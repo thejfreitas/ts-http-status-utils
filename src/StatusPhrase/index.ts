@@ -16,6 +16,7 @@ export enum StatusPhrase {
   NO_CONTENT = "No Content",
   RESET_CONTENT = "Reset Content",
   PARTIAL_CONTENT = "Partial Content",
+  MULTI_STATUS = "Multi-Status",
   MULTIPLE_CHOICES = "Multiple Choices",
   MOVED_PERMANENTLY = "Moved Permanently",
   FOUND = "Found",

@@ -50,6 +50,18 @@ export enum StatusDescription {
    */
   PARTIAL_CONTENT = "This response code is used when the Range header is sent from the client to request only part of a resource.",
   /**
+   * @description - StatusCode = 207
+   */
+  MULTI_STATUS = "Conveys information about multiple resources, for situations where multiple status codes might be appropriate.",
+  /**
+   * @description - StatusCode = 208
+   */
+  ALREADY_REPORTED = "Used inside a '<dav:propstat>' response element to avoid repeatedly enumerating the internal members of multiple bindings to the same collection.",
+  /**
+   * @description - StatusCode = 226
+   */
+  IM_USED = "The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.",
+  /**
    * @description - StatusCode =
    */
   MULTIPLE_CHOICES = "The request has more than one possible response. The user agent or user should choose one of them. (There is no standardized way of choosing one of the responses, but HTML links to the possibilities are recommended so the user can pick.)",

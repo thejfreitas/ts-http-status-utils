@@ -62,6 +62,18 @@ export enum StatusCode {
    */
   PARTIAL_CONTENT = 206,
   /**
+   * @description Conveys information about multiple resources, for situations where multiple status codes might be appropriate.
+   */
+  MULTI_STATUS = 207,
+  /**
+   * @description Used inside a "<dav:propstat>" response element to avoid repeatedly enumerating the internal members of multiple bindings to the same collection.
+   */
+  ALREADY_REPORTED = 208,
+  /**
+   * @description The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
+   */
+  IM_USED = 226,
+  /**
    * @description - @
    */
   MULTIPLE_CHOICES = 300,
