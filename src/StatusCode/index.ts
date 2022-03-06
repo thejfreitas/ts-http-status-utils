@@ -74,31 +74,31 @@ export enum StatusCode {
    */
   IM_USED = 226,
   /**
-   * @description - @
+   * @description The request has more than one possible response.
    */
   MULTIPLE_CHOICES = 300,
   /**
-   * @description - @
+   * @description The URL of the requested resource has been changed permanently. The new URL is given in the response.
    */
   MOVED_PERMANENTLY = 301,
   /**
-   * @description - @
+   * @description This response code means that the URI of requested resource has been changed temporarily. Further changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.
    */
   FOUND = 302,
   /**
-   * @description - @
+   * @description The server sent this response to direct the client to get the requested resource at another URI with a GET request.
    */
   SEE_OTHER = 303,
   /**
-   * @description - @
+   * @description This is used for caching purposes. It tells the client that the response has not been modified, so the client can continue to use the same cached version of the response.
    */
   NOT_MODIFIED = 304,
   /**
-   * @description - @
+   * @description The server sends this response to direct the client to get the requested resource at another URI with same method that was used in the prior request.
    */
   TEMPORARY_REDIRECT = 307,
   /**
-   * @description - @
+   * @description This means that the resource is now permanently located at another URI, specified by the Location: HTTP Response header. This has the same semantics as the 301 Moved Permanently HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request.
    */
   PERMANENT_REDIRECT = 308,
   /**

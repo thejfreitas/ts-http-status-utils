@@ -62,31 +62,31 @@ export enum StatusDescription {
    */
   IM_USED = "The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 300
    */
-  MULTIPLE_CHOICES = "The request has more than one possible response. The user agent or user should choose one of them. (There is no standardized way of choosing one of the responses, but HTML links to the possibilities are recommended so the user can pick.)",
+  MULTIPLE_CHOICES = "The request has more than one possible response.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 301
    */
   MOVED_PERMANENTLY = "The URL of the requested resource has been changed permanently. The new URL is given in the response.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 302
    */
   FOUND = "This response code means that the URI of requested resource has been changed temporarily. Further changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 303
    */
   SEE_OTHER = "The server sent this response to direct the client to get the requested resource at another URI with a GET request.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 304
    */
   NOT_MODIFIED = "This is used for caching purposes. It tells the client that the response has not been modified, so the client can continue to use the same cached version of the response.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 307
    */
-  TEMPORARY_REDIRECT = "The server sends this response to direct the client to get the requested resource at another URI with same method that was used in the prior request. This has the same semantics as the 302 Found HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request.",
+  TEMPORARY_REDIRECT = "The server sends this response to direct the client to get the requested resource at another URI with same method that was used in the prior request.",
   /**
-   * @description - StatusCode =
+   * @description - StatusCode = 308
    */
   PERMANENT_REDIRECT = "This means that the resource is now permanently located at another URI, specified by the Location: HTTP Response header. This has the same semantics as the 301 Moved Permanently HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request.",
   /**
