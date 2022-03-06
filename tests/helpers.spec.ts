@@ -12,8 +12,8 @@ import { StatusLabel } from "../src/StatusLabel/";
 describe("makeHttpResponsesDictionary tests", () => {
   const dictionary = makeHttpResponsesDictionary();
 
-  it("should create a dictionary with 58 objects", () => {
-    expect(Object.entries(dictionary)).toHaveLength(58);
+  it("should create a dictionary with 61 objects", () => {
+    expect(Object.entries(dictionary)).toHaveLength(61);
   });
 
   it("should assert content from dictionary for an informational response", () => {
