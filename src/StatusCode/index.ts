@@ -218,47 +218,47 @@ export enum StatusCode {
    */
   UNAVAILABLE_FOR_LEGAL_REASONS = 451,
   /**
-   * @description - @
+   * @description This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response.
    */
   INTERNAL_SERVER_ERROR = 500,
   /**
-   * @description - @
+   * @description The request method is not supported by the server and cannot be handled. The only methods that servers are required to support (and therefore that must not return this code) are GET and HEAD.
    */
   NOT_IMPLEMENTED = 501,
   /**
-   * @description - @
+   * @description This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response.
    */
   BAD_GATEWAY = 502,
   /**
-   * @description - @
+   * @description The server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. Note that together with this response, a user-friendly page explaining the problem should be sent.
    */
   SERVICE_UNAVAILABLE = 503,
   /**
-   * @description - @
+   * @description This error response is given when the server is acting as a gateway and cannot get a response in time.
    */
   GATEWAY_TIMEOUT = 504,
   /**
-   * @description - @
+   * @description The HTTP version used in the request is not supported by the server.
    */
   HTTP_VERSION_NOT_SUPPORTED = 505,
   /**
-   * @description - @
+   * @description The server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process.
    */
   VARIANT_ALSO_NEGOTIATES = 506,
   /**
-   * @description - @
+   * @description The method could not be performed on the resource because the server is unable to store the representation needed to successfully complete the request.
    */
   INSUFFICIENT_STORAGE = 507,
   /**
-   * @description - @
+   * @description The server detected an infinite loop while processing the request.
    */
   LOOP_DETECTED = 508,
   /**
-   * @description - @
+   * @description Further extensions to the request are required for the server to fulfill it.
    */
   NOT_EXTENDED = 510,
   /**
-   * @description - @
+   * @description Indicates that the client needs to authenticate to gain network access.
    */
   NETWORK_AUTHENTICATION_REQUIRED = 511,
 }
