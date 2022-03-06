@@ -1,4 +1,4 @@
-# ts-http-status-utils
+# ts-http-status-utils :hammer_and_wrench: :computer: :toolbox:
 
 HTTP status code declarations, status phrases, descriptions and util functions
 
@@ -14,7 +14,7 @@ Taking advantage of `TypeScript` and `Docstrings`, this library helps developers
 to handle and understand HTTP responses easily as well making it easy to build,
 integrate or debug microservices or APIs.
 
-### [How to use](#how-to-use)
+### [How to use](#how-to-use-in-a-real-project)
 
 ---
 
@@ -103,24 +103,24 @@ getStatusDescriptionByCode(StatusLabel.BAD_GATEWAY);
 Create a dictionary containing all HTTP responses
 
 ```javascript
-    {
-      '100': {
-        code: 100,
-        phrase: 'Continue',
-        description: 'This interim response indicates that the client should continue the request or ignore the response if the request is already finished.'
-      },
-      '101': {
-        code: 101,
-        phrase: 'Switching Protocols',
-        description: 'This code is sent in response to an Upgrade request header from the client and indicates the protocol the server is switching to.'
-      },
-      ...
+{
+'100': {
+    code: 100,
+    phrase: 'Continue',
+    description: 'This interim response indicates that the client should continue the request or ignore the response if the request is already finished.'
+},
+'101': {
+    code: 101,
+    phrase: 'Switching Protocols',
+    description: 'This code is sent in response to an Upgrade request header from the client and indicates the protocol the server is switching to.'
+},
+    ...
 
-      '511': {
-        code: 511,
-        phrase: 'Network Authentication Required',
-        description: 'Indicates that the client needs to authenticate to gain network access.'
-      }
+'511': {
+    code: 511,
+    phrase: 'Network Authentication Required',
+    description: 'Indicates that the client needs to authenticate to gain network access.'
+}
 ```
 
 ```javascript
@@ -140,7 +140,7 @@ return
 
 ```
 
-## How to use
+## How to use in a real project
 
 ```javascript
 import {
