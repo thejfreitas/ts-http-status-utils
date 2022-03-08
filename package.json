@@ -1,6 +1,6 @@
 {
   "name": "ts-http-status-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HTTP status code declarations, descriptions and utils",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
