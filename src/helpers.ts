@@ -4,6 +4,11 @@ import { StatusDescription } from "./StatusDescription";
 import { StatusLabel } from "./StatusLabel";
 import { IHttpResponsesDictionary } from "./Interfaces";
 
+/**
+ * Creates a dictionary containing all HTTP Statuses containing code, phrase and description.
+ *
+ * @returns dictionary
+ */
 export const makeHttpResponsesDictionary = () => {
   let dictionary: IHttpResponsesDictionary = {};
 
@@ -30,13 +35,29 @@ export const makeHttpResponsesDictionary = () => {
   return dictionary;
 };
 
-export const getStatusPhraseByCode = (code: number): StatusPhrase => {
+/**
+ * Get a status phrase from a given HTTP Status code
+ *
+ * @param code {StatusCode|number}
+ * @returns {string}
+ */
+export const getStatusPhraseByCode = (
+  code: number | StatusCode
+): StatusPhrase => {
   const httpDictionary = makeHttpResponsesDictionary();
 
   return httpDictionary[code].phrase;
 };
 
-export const getStatusDescriptionByCode = (code: number): StatusDescription => {
+/**
+ * Get a description from a given HTTP Status code
+ *
+ * @param code {StatusCode|number}
+ * @returns {string}
+ */
+export const getStatusDescriptionByCode = (
+  code: number | StatusCode
+): StatusDescription => {
   const httpDictionary = makeHttpResponsesDictionary();
 
   return httpDictionary[code].description;
