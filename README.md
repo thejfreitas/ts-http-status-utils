@@ -20,7 +20,7 @@ integrate or debug microservices or APIs.
 
 ### Available enums
 
-`StatusCode, StatusPhrase, StatusDescription, , StatusLabel, RequestMethod`
+`RequestMethod, StatusCode, StatusPhrase, StatusDescription, StatusLabel`
 
 ### RequestMethod
 
@@ -29,7 +29,7 @@ RequestMethod.GET;
 
 // Return "GET"
 
-StatusCode.POST;
+RequestMethod.POST;
 
 // Return "POST"
 ```
@@ -53,7 +53,7 @@ StatusPhrase.PROCESSING;
 
 // Return "Processing"
 
-StatusCode.MOVED_PERMANENTLY;
+StatusPhrase.MOVED_PERMANENTLY;
 
 // Return "Moved Permanently"
 ```
@@ -61,7 +61,7 @@ StatusCode.MOVED_PERMANENTLY;
 ### StatusDescription
 
 ```javascript
-StatusPhrase.CREATED;
+StatusDescription.CREATED;
 
 // Return "The request succeeded, and a new resource was created as a result. This is typically the response sent after POST requests, or some PUT requests."
 ```
@@ -85,7 +85,7 @@ StatusLabel.ALREADY_REPORTED;
 ### getStatusPhraseByCode
 
 ```javascript
-getStatusPhraseByCode(StatusLabel.PROXY_AUTHENTICATION_REQUIRED);
+getStatusPhraseByCode(StatusCode.PROXY_AUTHENTICATION_REQUIRED);
 
 // Return "Proxy Authentication Required"
 ```
@@ -93,9 +93,9 @@ getStatusPhraseByCode(StatusLabel.PROXY_AUTHENTICATION_REQUIRED);
 ### getStatusDescriptionByCode
 
 ```javascript
-getStatusDescriptionByCode(StatusLabel.BAD_GATEWAY);
+getStatusDescriptionByCode(StatusCode.BAD_GATEWAY);
 
-// Return "Bad Gateway"
+// Return "This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response."
 ```
 
 ### makeHttpResponsesDictionary
