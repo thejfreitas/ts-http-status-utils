@@ -28,7 +28,7 @@
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@types/jest": "^27.5.0",
+    "@types/jest": "^27.5.1",
     "jest": "^28.1.0",
     "ts-jest": "^28.0.2",
     "ts-loader": "^9.3.0",
