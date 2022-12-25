@@ -1,6 +1,6 @@
 {
   "name": "ts-http-status-utils",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "HTTP status code declarations, descriptions and utils",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,13 +23,15 @@
     "http-error-message"
   ],
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "yarn clean && tsc --emitDeclarationOnly --declaration --project tsconfig.json",
+    "clean": "rimraf dist",
     "test": "jest",
     "watch": "tsc --watch"
   },
   "devDependencies": {
     "@types/jest": "^29.2.4",
     "jest": "^29.3.1",
+    "rimraf": "^3.0.2",
     "ts-jest": "^29.0.3",
     "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
