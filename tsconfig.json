@@ -9,7 +9,7 @@
     "outDir": "dist",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "suppressImplicitAnyIndexErrors": true,
+    // "suppressImplicitAnyIndexErrors": true,
     "noEmit": false
   },
   "include": ["src/**/*"],
