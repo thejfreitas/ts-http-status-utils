@@ -1,8 +1,16 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
+import { defineConfig as vitestConfig } from "vitest/config";
 import dts from "vite-plugin-dts";
 
-export default defineConfig({
+const testConfig = vitestConfig({
+  test: {
+    include: ["./tests/*.ts"],
+    globals: true,
+  },
+});
+
+const config = defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
@@ -11,8 +19,9 @@ export default defineConfig({
     },
   },
   plugins: [dts()],
-  test: {
-    include: ["./tests/*.ts"],
-    globals: true,
-  },
 });
+
+export default {
+  ...testConfig,
+  ...config,
+};
