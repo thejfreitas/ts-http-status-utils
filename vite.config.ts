@@ -16,9 +16,10 @@ const config = defineConfig({
       entry: resolve(__dirname, "src/index.ts"),
       name: "ts-http-status-utils",
       fileName: "ts-http-status-utils",
+      formats: ["es"],
     },
   },
-  plugins: [dts()],
+  plugins: [dts({ insertTypesEntry: true })],
 });
 
 export default {
